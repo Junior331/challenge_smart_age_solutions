@@ -1,10 +1,12 @@
 import React from "react";
 import * as S from "./HomeStyled";
+import { Carousel } from "../../components/features/index";
 
 const Home = () => {
   return (
     <S.HomeContainer>
-      <h2>Home</h2>
+      <Carousel />
+      {/* <TheOriginalDesign /> */}
     </S.HomeContainer>
   );
 };

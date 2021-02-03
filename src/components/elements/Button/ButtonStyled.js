@@ -1,16 +1,38 @@
 import styled from "styled-components";
 
 const ButtonContainer = styled.button`
-  border: 0;
-  color: #fff;
-  margin: auto;
-  padding: 12px;
-  display: block;
-  font-size: 15px;
+  display: flex;
+  width: 165px;
+  height: 45px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-around;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
   cursor: pointer;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  background-color: #11ae68;    
+  margin: ${(props) => props.margin};
+  border: none;
+  background: none;
+`;
+const ButtonIcon = styled.img`
+  background-color: ${(props) => props.backgroundColor};
+  color: ${(props) => props.color};
+  border: ${(props) => props.border};
+  padding: ${(props) => props.padding};
+  border-radius: 50%;
+`;
+const Texto = styled.h2`
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: ${(props) => props.color};
 `;
 
-export { ButtonContainer };
+export { ButtonContainer, ButtonIcon, Texto };
