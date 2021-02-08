@@ -13,16 +13,19 @@ const Container = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 0 215px;
+  /* margin: 0 215px; */
+  width: 50%;
 `;
 const Titulo = styled.h2`
-  font-size: 49px;
+  font-size: 60px;
   font-family: "Playfair", Display;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.1em;
   color: #000000;
   margin-bottom: 10px;
+  width: 470px;
+  margin-left: 160px;
 `;
 const Texto = styled.p`
   font-family: "Raleway", sans-serif;
@@ -32,6 +35,8 @@ const Texto = styled.p`
   line-height: 27px;
   letter-spacing: 0.1em;
   color: #000000;
+  width: 470px;
+  margin: 20px 0 0 160px;
 `;
 const Explore = styled.img`
   padding: 10px 0;

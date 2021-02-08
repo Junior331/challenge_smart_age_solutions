@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "../../../styles/globalStyles";
 
 const HeaderContainer = styled.div`
   width: 100%;
@@ -8,6 +9,9 @@ const HeaderContainer = styled.div`
   padding: 0 10px;
   align-items: center;
   border-bottom: #dadada 1px solid;
+  ${media.mobile} {
+    display: none;
+  }
 `;
 
 const Container = styled.div`

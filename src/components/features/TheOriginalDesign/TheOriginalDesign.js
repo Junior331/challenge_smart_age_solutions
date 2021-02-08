@@ -19,7 +19,7 @@ const TheOriginalDesign = () => {
           padding="12px 15px"
           backgroundColor="transparent"
           src={ShapeBlack}
-          margin="0px -10px"
+          margin="50px 0 0 150px"
         ></Button>
       </S.Container>
       <S.Explore src={RelogioPulso} alt="" />

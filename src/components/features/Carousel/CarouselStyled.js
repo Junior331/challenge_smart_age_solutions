@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import media from "../../../styles/globalStyles";
 
 const CarouselContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
   height: auto;
+
+  ${media.mobile} {
+    flex-direction: column-reverse;
+  }
 `;
 
 const Carousel = styled.div`
@@ -26,6 +31,12 @@ const Controlador = styled.div`
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  ${media.mobile} {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 const Texte = styled.h2`
@@ -40,6 +51,9 @@ const Texte = styled.h2`
   transform: rotate(180deg);
   writing-mode: vertical-rl;
   color: #333333;
+  ${media.mobile} {
+    display: none;
+  }
 `;
 
 const SubContainer = styled.div`
@@ -49,6 +63,13 @@ const SubContainer = styled.div`
   align-items: center;
   height: 635px;
   justify-content: space-between;
+  ${media.mobile} {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    height: 75px;
+  }
 `;
 
 const BtnControler = styled.button`
@@ -61,11 +82,17 @@ const BtnControler = styled.button`
   margin: 5px 0px;
   border-radius: 50px;
   cursor: pointer;
+
   &:first-child {
     border: 1px solid #d5a368;
   }
+
   &:hover {
     border: 1px solid #d5a368;
+  }
+
+  ${media.mobile} {
+    margin: 5px 10px;
   }
 `;
 
@@ -74,6 +101,9 @@ const Line = styled.div`
   height: 1px;
   background: #d5a368;
   transform: rotate(-90deg);
+  ${media.mobile} {
+    display: none;
+  }
 `;
 
 const Titulo = styled.h1`
