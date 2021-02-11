@@ -25,6 +25,15 @@ const ClassicBridal = () => {
           src={Shape}
           margin="50px 0 0 -320px"
         ></Button>
+        <Button
+          titulo="shop now"
+          border="1px solid #d5a368"
+          color="#fff"
+          padding="12px 15px"
+          backgroundColor="transparent"
+          src={Shape}
+          margin="30px 0 0 -140px"
+        ></Button>
       </S.SubContainer>
     </S.ClassicBridalContainer>
   );

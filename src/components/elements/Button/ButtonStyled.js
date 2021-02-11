@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ButtonContainer = styled.button`
   display: flex;
-  width: 165px;
+  /* width: 165px; */
   height: 45px;
   align-items: center;
   box-sizing: border-box;
@@ -23,6 +23,7 @@ const ButtonIcon = styled.img`
   border: ${(props) => props.border};
   padding: ${(props) => props.padding};
   border-radius: 50%;
+  margin-right: 10px;
 `;
 const Texto = styled.h2`
   font-family: "Raleway", sans-serif;

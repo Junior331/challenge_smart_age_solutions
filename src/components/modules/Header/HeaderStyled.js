@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import media from "../../../styles/globalStyles";
+import { media } from "../../../styles/globalStyles";
 
 const HeaderContainer = styled.div`
   width: 100%;

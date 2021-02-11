@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import media from "../../../styles/globalStyles";
+import { media } from "../../../styles/globalStyles";
 
 const CarouselContainer = styled.div`
   width: 100%;
@@ -14,13 +14,11 @@ const CarouselContainer = styled.div`
 
 const Carousel = styled.div`
   width: 100%;
-  position: relative;
   div:nth-child(n) {
     margin: 0;
   }
   img:first-child {
     width: 100%;
-    margin: 0;
   }
 `;
 
@@ -107,16 +105,29 @@ const Line = styled.div`
 `;
 
 const Titulo = styled.h1`
-  font-family: "Playfair" Display;
+  font-family: "Playfair", Display;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
-  margin: -60px 0px 65px 60px;
+  /* margin: -60px 0px 65px 60px; */
   letter-spacing: 0.1em;
   color: #ffffff;
+  ${media.mobile} {
+    font-size: 35px;
+  }
 `;
 
-const Explore = styled.img``;
+const DescriptioCarousel = styled.div`
+  ${media.mobile} {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 185px;
+    left: 30px;
+    width: 80%;
+  }
+`;
 
 export {
   CarouselContainer,
@@ -127,5 +138,5 @@ export {
   Line,
   Texte,
   Titulo,
-  Explore,
+  DescriptioCarousel,
 };

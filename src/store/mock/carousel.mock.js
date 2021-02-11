@@ -3,8 +3,8 @@ import { PingenteImgCarousel } from "../../assets/index";
 import { AliancaImgCarousel } from "../../assets/index";
 import { aliancasImgCarousel } from "../../assets/index";
 export const mockImgsCarousel = [
-  MulherImgCarousel,
-  PingenteImgCarousel,
-  AliancaImgCarousel,
   aliancasImgCarousel,
+  AliancaImgCarousel,
+  PingenteImgCarousel,
+  MulherImgCarousel,
 ];

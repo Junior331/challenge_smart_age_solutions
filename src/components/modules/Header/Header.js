@@ -14,7 +14,6 @@ import { MenuItens } from "./MenuMobile/MenuItens";
 import { Link } from "react-router-dom";
 
 const Header = (props) => {
-  console.log(props);
   return (
     <>
       <S.HeaderContainer>

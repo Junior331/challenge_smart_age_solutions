@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import { Istock } from "../../../assets/index";
+import { media } from "../../../styles/globalStyles";
 
 const ClassicBridalContainer = styled.div`
   display: flex;
   height: 458px;
+  ${media.mobile} {
+    flex-direction: column;
+    height: 880px;
+  }
 `;
 
 const SubContainer = styled.div`
@@ -13,6 +18,22 @@ const SubContainer = styled.div`
   flex-direction: column;
   width: 50%;
   background: #472138;
+  button:nth-child(1n) {
+    display: flex;
+  }
+  button:nth-child(2n) {
+    display: none;
+  }
+  ${media.mobile} {
+    width: 100%;
+    height: 80%;
+    button:nth-child(1n) {
+      display: none;
+    }
+    button:nth-child(2n) {
+      display: flex;
+    }
+  }
 `;
 
 const Titulo = styled.h2`
@@ -25,6 +46,10 @@ const Titulo = styled.h2`
   width: 475px;
   color: #d5a368;
   margin-bottom: 15px;
+  ${media.mobile} {
+    width: 75%;
+    font-size: 60px;
+  }
 `;
 
 const Texto = styled.p`
@@ -36,6 +61,10 @@ const Texto = styled.p`
   letter-spacing: 0.1em;
   color: #ffffff;
   width: 470px;
+  ${media.mobile} {
+    width: 75%;
+    font-size: 15px;
+  }
 `;
 
 const ContainerImg = styled.div`
@@ -44,6 +73,9 @@ const ContainerImg = styled.div`
   background-image: url(${Istock});
   background-size: cover;
   background-repeat: no-repeat;
+  ${media.mobile} {
+    width: 100%;
+  }
 `;
 const Img = styled.img`
   width: 100%;

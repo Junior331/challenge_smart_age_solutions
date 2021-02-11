@@ -4,17 +4,19 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { MenuItens } from "./MenuItens";
-import { Bag, Logo, Lupa, Heart, User } from "../../../../assets/icons";
+import { Bag, Logo, Lupa } from "../../../../assets/icons";
 const MenuMobile = () => {
   const [sidebar, setSidebar] = useState(false);
   const showMenu = () => setSidebar(!sidebar);
 
   return (
     <S.MenuMobileContainer>
-      <FaIcons.FaBars onClick={showMenu}></FaIcons.FaBars>
-      <Link to="/">
-        <S.Logo src={Logo} alt="" />
-      </Link>
+      <S.SubContainer>
+        <FaIcons.FaBars onClick={showMenu}></FaIcons.FaBars>
+        <Link to="/">
+          <S.Logo src={Logo} alt="" />
+        </Link>
+      </S.SubContainer>
       <S.ContainerIcons>
         <S.Icons src={Bag} alt="" />
         <S.Icons src={Lupa} alt="" />

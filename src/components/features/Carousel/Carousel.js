@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import * as S from "./CarouselStyled";
 import CarouselSlider from "react-elastic-carousel";
 import { mockImgsCarousel } from "../../../store/mock/carousel.mock";
+import { Button } from "../../elements/index";
+import { Shape } from "../../../assets/icons";
+
 const CarouselImgs = ({ imagesUrl }) => {
   console.log("imagesUrl", imagesUrl);
   const carouselRef = useRef();
@@ -30,6 +33,17 @@ const CarouselImgs = ({ imagesUrl }) => {
             <img key={index} src={image} alt="" />
           ))}
         </CarouselSlider>
+        <S.DescriptioCarousel>
+          <S.Titulo>Engagement Ring </S.Titulo>
+          <Button
+            titulo="Explore"
+            border="1px solid #d5a368"
+            color="#FFF"
+            padding="12px 15px"
+            backgroundColor="transparent"
+            src={Shape}
+          ></Button>
+        </S.DescriptioCarousel>
       </S.Carousel>
     </S.CarouselContainer>
   );

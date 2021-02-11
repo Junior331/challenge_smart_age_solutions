@@ -20,7 +20,6 @@ const Button = ({
         padding={padding}
         background-color={backgroundColor}
         src={src}
-        key={key}
         alt=""
       ></S.ButtonIcon>
       <S.Texto color={color}>{titulo}</S.Texto>

@@ -15,11 +15,20 @@ const TheOriginalDesign = () => {
         <Button
           titulo="Explore"
           border="1px solid #d5a368"
-          color="#000"
+          color="#333333"
           padding="12px 15px"
           backgroundColor="transparent"
           src={ShapeBlack}
-          margin="50px 0 0 150px"
+          margin="50px 0px 0 150px"
+        ></Button>
+        <Button
+          titulo="Explore"
+          border="1px solid #d5a368"
+          color="#333333"
+          padding="12px 15px"
+          backgroundColor="transparent"
+          src={ShapeBlack}
+          margin="20px 0 0 0"
         ></Button>
       </S.Container>
       <S.Explore src={RelogioPulso} alt="" />

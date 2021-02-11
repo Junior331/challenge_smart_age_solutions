@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import media from "../../../../styles/globalStyles";
+import { media } from "../../../../styles/globalStyles";
 
 const MenuMobileContainer = styled.div`
   display: none;
@@ -19,17 +19,20 @@ const MenuMobileContainer = styled.div`
 
 const Containerliks = styled.div`
   ${media.mobile} {
-    transition: all 2s ease-out;
+    transition: 0.9s ease-out;
+    transform: translateX(-100%) rotateY(-90deg);
 
     position: absolute;
+    transform-origin: right;
     display: flex;
     width: 100%;
     height: 100%;
     background: #fff;
     z-index: 1;
     flex-direction: column;
-    top: -740px;
-    left: -335px;
+    top: 0px;
+    left: 0px;
+    /* left: -375px; */
     svg:first-child {
       position: relative;
       left: 87%;
@@ -51,9 +54,9 @@ const Containerliks = styled.div`
     ${(props) =>
       props.isActive &&
       css`
-        top: 0px;
-        left: 0px;
-        transition: all 2s ease-out;
+        /* left: 0px; */
+
+        transform: translateX(0%) rotateY(0deg);
       `}
   }
 `;
@@ -76,8 +79,21 @@ const Icons = styled.img`
 `;
 
 const Logo = styled.img`
-  width: 180px;
-  margin-left: -60px;
+  max-width: 180px;
+`;
+const SubContainer = styled.div`
+  display: flex;
+  max-width: 225px;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
 `;
 
-export { MenuMobileContainer, Containerliks, ContainerIcons, Icons, Logo };
+export {
+  MenuMobileContainer,
+  Containerliks,
+  ContainerIcons,
+  Icons,
+  SubContainer,
+  Logo,
+};

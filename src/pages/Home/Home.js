@@ -12,9 +12,10 @@ const Home = () => {
   return (
     <S.HomeContainer>
       <Carousel />
-      {/* <TheOriginalDesign />
+      <TheOriginalDesign />
       <JewelryStore />
       <ClassicBridal />
+      {/*
       <Category /> */}
     </S.HomeContainer>
   );
