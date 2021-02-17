@@ -14,6 +14,11 @@ const CarouselContainer = styled.div`
 
 const Carousel = styled.div`
   width: 100%;
+  height: 100%;
+
+  ${media.mobile} {
+    /* max-height: 225px; */
+  }
   div:nth-child(n) {
     margin: 0;
   }
@@ -29,6 +34,9 @@ const Controlador = styled.div`
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  ${media.tablet} {
+    width: 6%;
+  }
   ${media.mobile} {
     display: flex;
     flex-direction: row;
@@ -59,7 +67,7 @@ const SubContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 635px;
+  height: 500px;
   justify-content: space-between;
   ${media.mobile} {
     display: flex;
@@ -95,7 +103,7 @@ const BtnControler = styled.button`
 `;
 
 const Line = styled.div`
-  width: 250px;
+  width: 190px;
   height: 1px;
   background: #d5a368;
   transform: rotate(-90deg);
@@ -118,14 +126,14 @@ const Titulo = styled.h1`
 `;
 
 const DescriptioCarousel = styled.div`
+  position: relative;
+  top: -135px;
+  left: 30px;
+  width: 80%;
   ${media.mobile} {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
-    top: 185px;
-    left: 30px;
-    width: 80%;
   }
 `;
 

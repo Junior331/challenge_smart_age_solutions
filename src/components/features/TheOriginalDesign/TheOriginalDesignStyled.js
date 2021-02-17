@@ -1,5 +1,6 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { media } from "../../../styles/globalStyles";
+import { RelogioPulso } from "../../../assets/index";
 
 const TheOriginalDesignContainer = styled.div`
   display: flex;
@@ -15,7 +16,7 @@ const TheOriginalDesignContainer = styled.div`
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
   flex-direction: column;
   /* margin: 0 215px; */
   width: 50%;
@@ -51,13 +52,13 @@ const Titulo = styled.h2`
   letter-spacing: 0.1em;
   color: #000000;
   margin-bottom: 10px;
-  width: 470px;
-  margin-left: 160px;
+  width: 95%;
+  margin-left: 0px;
   ${media.mobile} {
     font-size: 45px;
     width: 85%;
     margin-top: 30px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 `;
 const Texto = styled.p`
@@ -68,8 +69,8 @@ const Texto = styled.p`
   line-height: 27px;
   letter-spacing: 0.1em;
   color: #000000;
-  width: 470px;
-  margin: 20px 0 0 160px;
+  width: 95%;
+  margin: 0;
   ${media.mobile} {
     width: 85%;
     margin: 20px 0 0 0px;
@@ -85,4 +86,20 @@ const Explore = styled.img`
     width: 100%;
   }
 `;
-export { TheOriginalDesignContainer, Container, Titulo, Texto, Explore };
+const ContainerImg = styled.div`
+  width: 55%;
+  background-image: url(${RelogioPulso});
+
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
+
+export {
+  TheOriginalDesignContainer,
+  Container,
+  Titulo,
+  Texto,
+  Explore,
+  ContainerImg,
+};

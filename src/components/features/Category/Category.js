@@ -1,7 +1,10 @@
 import React from "react";
 import * as S from "./CategoryStyled";
 import Carousel from "react-elastic-carousel";
-import { AliancaCategoriaCarousel } from "../../../assets/index";
+import {
+  AliancaCategoriaCarousel,
+  MulherImgCarousel,
+} from "../../../assets/index";
 const Category = () => {
   return (
     <S.CategoryContainer>
@@ -10,7 +13,10 @@ const Category = () => {
           <S.Texto>CATEGORY</S.Texto>
           <S.Titulo>Rings</S.Titulo>
         </S.Item>
-        <S.Item>2</S.Item>
+        <S.Item src={MulherImgCarousel}>
+          <S.Texto>lorem</S.Texto>
+          <S.Titulo>lorem</S.Titulo>
+        </S.Item>
         <S.Item src={AliancaCategoriaCarousel}>3</S.Item>
       </Carousel>
     </S.CategoryContainer>

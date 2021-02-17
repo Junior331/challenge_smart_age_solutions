@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { media } from "../../../styles/globalStyles";
 const CategoryContainer = styled.div`
   display: flex;
   button:nth-child(n) {
@@ -13,6 +13,7 @@ const CategoryContainer = styled.div`
       box-shadow: inset -70px -30px 30px 0px #7d5cff80;
     }
   }
+
   button:first-child {
     position: absolute;
     left: 3%;
@@ -23,11 +24,16 @@ const CategoryContainer = styled.div`
   }
   button:last-child {
     position: absolute;
-    left: 94%;
+    left: 92%;
   }
 
   div:nth-child(1n) {
     margin: 0px;
+  }
+  ${media.mobile} {
+    button:nth-child(n) {
+      display: none;
+    }
   }
 `;
 const Item = styled.div`
@@ -43,6 +49,10 @@ const Item = styled.div`
   background-image: url(${(props) => props.src});
   background-size: cover;
   background-repeat: no-repeat;
+  ${media.mobile} {
+    height: 200px;
+    background-size: cover;
+  }
 `;
 
 const Titulo = styled.h2`
@@ -56,6 +66,9 @@ const Titulo = styled.h2`
   text-align: center;
   letter-spacing: 0.3em;
   color: #ffffff;
+  ${media.mobile} {
+    font-size: 55px;
+  }
 `;
 
 const Texto = styled.p`
@@ -66,7 +79,9 @@ const Texto = styled.p`
   line-height: 28px;
   text-align: right;
   letter-spacing: 0.25em;
-
   color: #ffffff;
+  ${media.mobile} {
+    font-size: 20px;
+  }
 `;
 export { CategoryContainer, Item, Titulo, Texto };

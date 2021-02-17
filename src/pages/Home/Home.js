@@ -15,8 +15,7 @@ const Home = () => {
       <TheOriginalDesign />
       <JewelryStore />
       <ClassicBridal />
-      {/*
-      <Category /> */}
+      <Category />
     </S.HomeContainer>
   );
 };

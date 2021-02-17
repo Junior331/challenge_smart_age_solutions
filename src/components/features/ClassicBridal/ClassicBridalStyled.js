@@ -14,19 +14,25 @@ const ClassicBridalContainer = styled.div`
 const SubContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   width: 50%;
   background: #472138;
+  padding: 10px 4.5%;
+  ${media.tablet} {
+  }
+
   button:nth-child(1n) {
     display: flex;
   }
   button:nth-child(2n) {
     display: none;
   }
+
   ${media.mobile} {
     width: 100%;
     height: 80%;
+    padding-left: 15vw;
     button:nth-child(1n) {
       display: none;
     }
@@ -46,6 +52,11 @@ const Titulo = styled.h2`
   width: 475px;
   color: #d5a368;
   margin-bottom: 15px;
+  ${media.tablet} {
+    width: 100%;
+    font-size: 57px;
+    line-height: 70px;
+  }
   ${media.mobile} {
     width: 75%;
     font-size: 60px;
@@ -61,6 +72,11 @@ const Texto = styled.p`
   letter-spacing: 0.1em;
   color: #ffffff;
   width: 470px;
+  ${media.tablet} {
+    width: 350px;
+    /* font-size: 70px;
+    line-height: 70px; */
+  }
   ${media.mobile} {
     width: 75%;
     font-size: 15px;

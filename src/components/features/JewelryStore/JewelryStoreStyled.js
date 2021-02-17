@@ -11,7 +11,7 @@ const JewelryStoreContainer = styled.div`
     margin: 10px;
   }
   ${media.mobile} {
-    height: 340px;
+    height: 45vh;
     justify-content: flex-end;
   }
 `;
@@ -25,7 +25,8 @@ const Titulo = styled.h1`
   letter-spacing: 0.1em;
   color: #d5a368;
   ${media.mobile} {
-    font-size: 48px;
+    font-size: 10vw;
+    width: 100%;
   }
 `;
 const Texto = styled.h2`

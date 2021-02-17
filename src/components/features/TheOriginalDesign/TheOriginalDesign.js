@@ -1,6 +1,5 @@
 import React from "react";
 import * as S from "./TheOriginalDesignStyled";
-import { RelogioPulso } from "../../../assets/index";
 import { Button } from "../../elements/index";
 import { ShapeBlack } from "../../../assets/icons";
 const TheOriginalDesign = () => {
@@ -19,7 +18,7 @@ const TheOriginalDesign = () => {
           padding="12px 15px"
           backgroundColor="transparent"
           src={ShapeBlack}
-          margin="50px 0px 0 150px"
+          margin="50px 58% 0px 0px"
         ></Button>
         <Button
           titulo="Explore"
@@ -31,7 +30,7 @@ const TheOriginalDesign = () => {
           margin="20px 0 0 0"
         ></Button>
       </S.Container>
-      <S.Explore src={RelogioPulso} alt="" />
+      <S.ContainerImg></S.ContainerImg>
     </S.TheOriginalDesignContainer>
   );
 };

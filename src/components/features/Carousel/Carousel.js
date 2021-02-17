@@ -33,7 +33,8 @@ const CarouselImgs = ({ imagesUrl }) => {
             <img key={index} src={image} alt="" />
           ))}
         </CarouselSlider>
-        <S.DescriptioCarousel>
+
+        {/* <S.DescriptioCarousel>
           <S.Titulo>Engagement Ring </S.Titulo>
           <Button
             titulo="Explore"
@@ -43,7 +44,7 @@ const CarouselImgs = ({ imagesUrl }) => {
             backgroundColor="transparent"
             src={Shape}
           ></Button>
-        </S.DescriptioCarousel>
+        </S.DescriptioCarousel> */}
       </S.Carousel>
     </S.CarouselContainer>
   );
