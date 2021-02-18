@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { media } from "../../../styles/globalStyles";
+
+import { media, animation } from "../../../styles/globalStyles";
 const CategoryContainer = styled.div`
   display: flex;
   button:nth-child(n) {
@@ -65,6 +66,9 @@ const Titulo = styled.h2`
   align-items: center;
   text-align: center;
   letter-spacing: 0.3em;
+  position: relative;
+  animation: ${animation} 3s both;
+  opacity: 0;
   color: #ffffff;
   ${media.mobile} {
     font-size: 55px;
@@ -80,8 +84,13 @@ const Texto = styled.p`
   text-align: right;
   letter-spacing: 0.25em;
   color: #ffffff;
+  position: relative;
+  animation: ${animation} 2s both;
+  opacity: 0;
+
   ${media.mobile} {
     font-size: 20px;
   }
 `;
+
 export { CategoryContainer, Item, Titulo, Texto };

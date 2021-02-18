@@ -1,8 +1,16 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, keyframes } from "styled-components";
 export const media = {
   tablet: "@media (min-width: 768px) and (max-width: 1023px)",
   mobile: "@media (max-width: 767px) ",
 };
+export const animation = keyframes`
+  from {top: 100px;}
+  to {top: 0px;
+  	  opacity: 1;
+      animation-delay: 100ms;
+      animation-duration: 1000ms;
+	 } 
+`;
 
 const GlobalStyles = createGlobalStyle`
 @font-face {

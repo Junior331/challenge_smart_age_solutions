@@ -14,10 +14,13 @@ const Category = () => {
           <S.Titulo>Rings</S.Titulo>
         </S.Item>
         <S.Item src={MulherImgCarousel}>
-          <S.Texto>lorem</S.Texto>
-          <S.Titulo>lorem</S.Titulo>
+          <S.Texto>CATEGORY</S.Texto>
+          <S.Titulo>Rings</S.Titulo>
         </S.Item>
-        <S.Item src={AliancaCategoriaCarousel}>3</S.Item>
+        <S.Item src={AliancaCategoriaCarousel}>
+          <S.Texto>CATEGORY</S.Texto>
+          <S.Titulo>Rings</S.Titulo>
+        </S.Item>
       </Carousel>
     </S.CategoryContainer>
   );
