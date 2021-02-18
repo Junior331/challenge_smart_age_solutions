@@ -27,7 +27,7 @@ const TheOriginalDesign = () => {
           padding="12px 15px"
           backgroundColor="transparent"
           src={ShapeBlack}
-          margin="20px 0 0 0"
+          margin="20px 0"
         ></Button>
       </S.Container>
       <S.ContainerImg></S.ContainerImg>

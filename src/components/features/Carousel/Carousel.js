@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import * as S from "./CarouselStyled";
 import CarouselSlider from "react-elastic-carousel";
 import { mockImgsCarousel } from "../../../store/mock/carousel.mock";
-import { Button } from "../../elements/index";
-import { Shape } from "../../../assets/icons";
 
 const CarouselImgs = ({ imagesUrl }) => {
   console.log("imagesUrl", imagesUrl);

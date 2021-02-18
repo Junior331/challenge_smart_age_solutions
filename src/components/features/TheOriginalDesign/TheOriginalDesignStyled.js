@@ -16,10 +16,11 @@ const TheOriginalDesignContainer = styled.div`
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-direction: column;
   /* margin: 0 215px; */
   width: 50%;
+  padding-left: 40px;
 
   button:nth-child(1n) {
     display: flex;
@@ -71,6 +72,7 @@ const Texto = styled.p`
   color: #000000;
   width: 95%;
   margin: 0;
+  max-width: 455px;
   ${media.mobile} {
     width: 85%;
     margin: 20px 0 0 0px;
@@ -87,9 +89,12 @@ const Explore = styled.img`
   }
 `;
 const ContainerImg = styled.div`
-  width: 55%;
+  width: 50%;
   background-image: url(${RelogioPulso});
 
+  ${media.mobile} {
+    width: 100%;
+  }
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
