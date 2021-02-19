@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { media, animation } from "../../../styles/globalStyles";
 const CategoryContainer = styled.div`
@@ -62,11 +62,12 @@ const Titulo = styled.h2`
   font-weight: bold;
   font-size: 96px;
   line-height: 115px;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.3em;
   position: relative;
+  /* ${(props) => props.isViseble && css``} */
+  display: ${(props) => (props.isVisible ? "flex" : "none")};
   animation: ${animation} 3s both;
   opacity: 0;
   color: #ffffff;
@@ -85,6 +86,7 @@ const Texto = styled.p`
   letter-spacing: 0.25em;
   color: #ffffff;
   position: relative;
+  display: ${(props) => (props.isVisible ? "flex" : "none")};
   animation: ${animation} 2s both;
   opacity: 0;
 
